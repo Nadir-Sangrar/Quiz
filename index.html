@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .container {
+            text-align: center;
+            color: #0275d8;
+        }
+
+        h1 {
+            font-size: 64px;
+        }
+
+        .display_score {
+            padding: 40px;
+            background: #f7f7f7;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .score {
+            font-size: 48px;
+            color: #0275d8;
+        }
+
+        .questions {
+            padding: 65px;
+            background: #0275d8;
+            font-size: 20px;
+            color: antiquewhite;
+        }
+
+        container {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form_p {
+            color: #fff;
+            font-size: 32px;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        input[type='submit'] {
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>The Ninja Quiz</h1>
+        <p class="display_score">You are <span class="score">0% </span>Ninja</p>
+    </div>
+    <form class="ninja_form">
+        <div class="questions">
+            <p class="form_p">Lets begin our quiz!</p>
+            <div>
+                <p class="the_question">What is your name?</p>
+                <div>
+                    <input type="radio" id='q1a' name="q1" value="A" checked>
+                    <label for="q1">Ridan Bin Awal</label>
+                </div>
+                <div> 
+                    <input type="radio" id='q2b' name="q1" value="B">
+                    <label for="q2b">Nadir Ayaz Sangrar</label></div>
+                <hr>
+            </div>
+            <div>
+                <p class="the_question">What is your name?</p>
+                <div> <input type="radio" checked name="q2" value="A">Ridan Bin Awal</div>
+                <div> <input type="radio" name="q2" value="B">Nadir Ayaz Sangrar</div>
+                <hr>
+            </div>
+            <div>
+                <p class="the_question">What is your name?</p>
+                <div> <input type="radio" checked name="q3" value="A">Ridan Bin Awal</div>
+                <div> <input type="radio" name="q3" value="B">Nadir Ayaz Sangrar</div>
+                <hr>
+            </div>
+            <div>
+                <p class="the_question">What is your name?</p>
+                <div> <input type="radio" checked name="q4" value="A">Ridan Bin Awal</div>
+                <div> <input type="radio" name="q4" value="B">Nadir Ayaz Sangrar</div>
+                <hr>
+
+            </div>
+            <input type="submit" value="Submit Score">
+
+        </div>
+    </form>
+    <script src="sandbox.js"></script>
+</body>
+
+</html>
